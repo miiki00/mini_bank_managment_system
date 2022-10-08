@@ -19,20 +19,19 @@ int main(void)
 			printf("Error: Programe can't open\nNot enough memory");
 			return (1);
 		}
-		printf("Type 'help' for help\n"
-			"Enter a command: ");
+		printf("Type 'help' for help\nEnter a command: ");
 		ret = scanf("%s", inp);
-		error_msg_chk(ret);
+		//error_msg_chk(ret);
 		if (ret <= 0)
 		{
 			printf("Unable to parase Input pleas Enter something valid\n\n");
 			continue;
 		}
 		printf("Processing...\n");
-		//ret = _check_pass(inp);
-		if (1)
+		ret = _check_pass(inp);
+		if (ret == 1)
 		{
-			printf("Done\n\n");
+			printf("Invalid argument\n\n");
 		}
 		else if (ret == 0)
 		{
