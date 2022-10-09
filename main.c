@@ -32,11 +32,11 @@ int main(void)
 		//ret = _check_pass(inp);
 		if (1)
 		{
-			printf("Done\n\n");
+			printf("Invalid argument\nPlease enter a valid argumetn\n\n");
 		}
 		else if (ret == 0)
 		{
-			printf("done");
+			printf("done\n");
 		}
 		free(inp);
 	}
